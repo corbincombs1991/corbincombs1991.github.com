@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corbin Combs - Portfolio</title>
+    <style>
+        /* Modern, High-Contrast Black & Grey Theme */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #0d0d0d;
+            color: #d1d1d1;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: #ffffff;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        a {
+            color: #888888;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        /* Parallax Container */
+        .parallax {
+            background-image: url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=1920&auto=format&fit=crop'); 
+            height: 400px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-bottom: 2px solid #222;
+        }
+
+        .parallax-content {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            border-radius: 4px;
+        }
+
+        /* Standard Content Sections */
+        .section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: #1a1a1a;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 4px solid #444;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+        }
+
+        /* Video Section */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            background-color: #000;
+            margin-top: 20px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Gallery Grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 4px;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+
+        .gallery img:hover {
+            filter: grayscale(0%);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #050505;
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Parallax Section -->
+    <div class="parallax">
+        <div class="parallax-content">
+            <h1>Corbin Combs[cite: 1]</h1>
+            <p>Associate AI Scientist at Zylo[cite: 1]</p>
+            <p><a href="mailto:corcombs@gmail.com">corcombs@gmail.com</a> | <a href="https://www.linkedin.com/in/corbin-combs-a20870103" target="_blank">LinkedIn</a>[cite: 1]</p>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="section">
+        <h2>Summary</h2>
+        <p>A great all around worker hungry for opportunity and new experiences.[cite: 1]</p>
+        
+        <h3>Top Skills</h3>
+        <ul>
+            <li>Microsoft Power BI[cite: 1]</li>
+            <li>SQL[cite: 1]</li>
+            <li>Reporting[cite: 1]</li>
+        </ul>
+    </div>
+
+    <!-- Divider Parallax -->
+    <div class="parallax" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1920&auto=format&fit=crop'); height: 250px;"></div>
+
+    <!-- Experience Section -->
+    <div class="section">
+        <h2>Experience</h2>
+        
+        <div class="card">
+            <h3>Zylo[cite: 1]</h3>
+            <p><strong>Associate AI Scientist</strong> (March 2026 - Present)[cite: 1]<br>
+            <strong>Senior Data Analyst</strong> (November 2024 - March 2026)[cite: 1]<br>
+            <strong>Data Analyst</strong> (November 2022 - November 2024)[cite: 1]</p>
+            <p>Automated tasks using Python and Javascript, managed large datasets of customer financial data, and researched automated pipelines using Azure Document Intelligence and AWS Bedrock. Created algorithms to consistently match SaaS transactions.[cite: 1]</p>
+        </div>
+
+        <div class="card">
+            <h3>Simon Property Group[cite: 1]</h3>
+            <p><strong>Data Analyst</strong> (May 2022 - November 2022)[cite: 1]<br>
+            <strong>Senior Tenant Account Analyst</strong> (May 2018 - May 2022)[cite: 1]</p>
+            <p>Delivered key company-wide insights to executives, performed data validations, and wrote reports using Power BI and SQL.[cite: 1]</p>
+        </div>
+
+        <div class="card">
+            <h3>S&H TRANSPORTATION INC[cite: 1]</h3>
+            <p><strong>Safety Director, Dispatcher</strong> (April 2017 - May 2018)[cite: 1]<br>
+            <strong>Dock Supervisor</strong> (October 2016 - April 2017)[cite: 1]</p>
+        </div>
+
+        <h2>Education</h2>
+        <div class="card">
+            <h3>Indiana University-Purdue University[cite: 1]</h3>
+            <p>B.S, Computer Science (2010 - 2015)[cite: 1]</p>
+        </div>
+    </div>
+
+    <!-- Divider Parallax -->
+    <div class="parallax" style="background-image: url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1920&auto=format&fit=crop'); height: 250px;"></div>
+
+    <!-- Music Section -->
+    <div class="section">
+        <h2>Featured Music</h2>
+        <p>Rest In Peace Wade Boggs by Brenderlin</p>
+        <div class="video-container">
+            <!-- Replace 'YOUR_YOUTUBE_ID_HERE' with the actual 11-character video ID from the YouTube URL -->
+            <iframe src="https://www.youtube.com/embed/YOUR_YOUTUBE_ID_HERE?autoplay=0&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="section">
+        <h2>Gallery</h2>
+        <p>Upload your images into the repository and update the `src` paths below.</p>
+        <div class="gallery">
+            <!-- Replace the placeholder URLs with paths to your actual images (e.g., 'images/pic1.jpg') -->
+            <img src="https://via.placeholder.com/400x400/222222/555555?text=Photo+1" alt="Gallery Image 1">
+            <img src="https://via.placeholder.com/400x400/222222/555555?text=Photo+2" alt="Gallery Image 2">
+            <img src="https://via.placeholder.com/400x400/222222/555555?text=Photo+3" alt="Gallery Image 3">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Corbin Combs. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
